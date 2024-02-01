@@ -1,0 +1,15 @@
+---
+title: "Project 1: Individual"
+output: html_document
+date: "2023-08-22"
+---
+```{r setup, include=FALSE}
+my_data = read.csv("Project1Data.csv")
+```
+
+```{r}
+library(tidyverse)
+ggplot(my_data, aes(x = Breakfast, fill = Employment)) + geom_bar()
+
+```
+
